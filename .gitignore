@@ -205,3 +205,12 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+#
+# repository
+#
+tools/pb_gen
+tools/grpc_gen
+todo.txt
+done.txt
