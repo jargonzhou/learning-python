@@ -1,7 +1,7 @@
 # virtualenv
 * https://virtualenv.pypa.io/en/latest/index.html
 
-> a tool to create isolated Python environments. Since Python 3.3, a subset of it has been integrated into the standard library under the venv module.
+> a tool to create isolated Python environments. Since Python 3.3, a subset of it has been integrated into the standard library under the `venv` module.
 
 ## Usage
 

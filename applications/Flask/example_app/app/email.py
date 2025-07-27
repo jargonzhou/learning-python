@@ -13,10 +13,12 @@ def send_async_email(app, msg):
 
 def send_email(recipient, subject, template, **kwargs):
     app = current_app._get_current_object()
+    # 使用配置: app.config
     msg = Message(app.config['APP_MAIL_SUBJECT_PREFIX'] + ' ' + subject,
                   sender=app.config['APP_MAIL_SENDER'], recipients=[recipient])
     msg.body = render_template(template + '.txt', **kwargs)
     msg.html = render_template(template + '.html', **kwargs)
+    # 开启线程异步发送
     thr = Thread(target=send_async_email, args=[app, msg])
     thr.start()
     return thr
