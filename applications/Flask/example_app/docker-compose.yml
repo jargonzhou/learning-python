@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  # sqlite-web:
+    # image: coleifer/sqlite-web
+    # container_name: sqlite-web
+    # environment:
+    #   - SQLITE_DATABASE=data-dev.sqlite
+    # restart: "always"
+    # ports:
+    #   - "18080:8080"
+    # volumes:
+    #   - ./data-dev.sqlite:/data/data-dev.sqlite
+    #   - ./data:/data
+    # networks:
+    #   - devops-network
+
+  example_app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: example_app:1.0.0
+    ports:
+      - "15000:5000"
+    env_file: .env
+    restart: always
+    depends_on:
+      - mysql
+    networks:
+      - devops-network
+
+  mysql:
+    image: mysql:5.7
+    env_file: .env.mysql
+    restart: always
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+    ports:
+      - 3306:3306
+    networks:
+      - devops-network
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    healthcheck:
+      test: ["CMD", "mysqladmin", "-u", "root", "--password=devops+mysql", "--silent", "ping", "-h", "127.0.0.1"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+      start_period: 0s
+
+networks:
+  devops-network:
+    external: true

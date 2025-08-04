@@ -1,0 +1,5 @@
+-r common.txt
+Faker==37.5.3
+coverage==7.10.1
+playwright==1.54.0
+pyee==13.0.0

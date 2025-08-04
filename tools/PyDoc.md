@@ -1,7 +1,10 @@
-# PyDoc
+# pydoc
 * https://docs.python.org/3/library/pydoc.html
-* [PEP 257 – Docstring Conventions](https://peps.python.org/pep-0257/)
 * [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/)
+
+> pydoc — Documentation generator and online help system
+>
+> The pydoc module automatically generates documentation from Python modules. The documentation can be presented as pages of text on the console, served to a web browser, or saved to HTML files.
 
 ## Usage
 

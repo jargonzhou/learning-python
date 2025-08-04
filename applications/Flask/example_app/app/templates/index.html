@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% import "bootstrap/wtf.html" as wtf %}
+<!-- Jinja宏 -->
+{% import "_macros.html" as macros %}
 
 {% block title %}Example{% endblock %}
 
@@ -20,5 +22,29 @@
     {% endif %}!
   </h1>
 </div>
-<!-- {{ wtf.quick_form(form) }} -->
+
+<!-- 发帖表单 -->
+<div>
+  {% if current_user.can(Permission.WRITE) %}
+  {{ wtf.quick_form(form) }}
+  {% endif %}
+</div>
+
+<!-- 帖子展示 -->
+<div class="post-tabs">
+  {% include '_posts.html' %}
+</div>
+
+<!-- 分页部件 -->
+{% if pagination %}
+<div class="pagination">
+  {{ macros.pagination_widget(pagination, '.index') }}
+</div>
+{% endif %}
+{% endblock %}
+
+<!-- markdown支持 -->
+ {% block scripts %}
+{{ super() }}
+{{ pagedown.include_pagedown() }}
 {% endblock %}

@@ -214,3 +214,10 @@ tools/pb_gen
 tools/grpc_gen
 todo.txt
 done.txt
+
+# Flask
+applications/Flask/example_app/data
+applications/Flask/example_app/*.sqlite
+applications/Flask/example_app/tmp
+applications/Flask/example_app/mysql-data
+applications/Flask/example_app/mysql-data
