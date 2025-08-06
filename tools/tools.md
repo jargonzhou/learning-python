@@ -2,7 +2,7 @@
 # Python Tools
 
 ## Skafold
-* [cookiecutter](./cookiecutter.md)
+* [cookiecutter](./cookiecutter/cookiecutter.md)
 * [PyScaffold](./PyScaffold.md)
 
 ## Environment
@@ -13,7 +13,7 @@
   * [KaTeX.ipynb](./KaTeX.ipynb)
 * [Miniconda](https://docs.anaconda.com/miniconda/):  Miniconda is a free, miniature installation of Anaconda Distribution that includes only conda, Python, the packages they both depend on, and a small number of other useful packages.
 * [Pipenv.md](./Pipenv.md): Pipenv is a Python virtualenv management tool that supports a multitude of systems and nicely bridges the gaps between `pip`, `python` (using system python, `pyenv` or `asdf`) and `virtualenv`.
-* [pyenv](https://github.com/pyenv/pyenv): pyenv lets you easily switch between multiple versions of Python. It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.
+* [pyenv](https://github.com/pyenv/pyenv): pyenv lets you easily **switch between multiple versions of Python**. It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.
 * [Python Tutor](https://pythontutor.com/): Online Compiler, Visual Debugger, and AI Tutor for Python, Java, C, C++, and JavaScript
 * [python-dotenv](https://github.com/theskumar/python-dotenv): Reads key-value pairs from a .env file and can set them as environment variables. It helps in developing applications following the 12-factor principles.
 * [virtualenv](./virtualenv.md): a tool to create isolated Python environments. Since Python 3.3, a subset of it has been integrated into the standard library under the `venv` module.
@@ -21,7 +21,7 @@
 ## Package, Project
 * [pip.md](./pip.md): pip is the package installer for Python.
 * [pipx](https://pipx.pypa.io/): Install and Run Python Applications in Isolated Environments
-* [Poetry](./Poetry.md): Python packaging and dependency management made easy.
+* [Poetry](./poetry/Poetry.md): Python packaging and dependency management made easy.
 * [pydoc](./pydoc.md)
 * [Setuptools](https://setuptools.pypa.io/en/latest/userguide/index.html): Setuptools is a fully-featured, actively-maintained, and stable library designed to facilitate packaging Python projects. It helps developers to easily share reusable code (in the form of a library) and programs (e.g., CLI/GUI tools implemented in Python), that can be installed with pip and uploaded to PyPI.
 * [tox](./tox.md): tox aims to automate and standardize testing in Python.

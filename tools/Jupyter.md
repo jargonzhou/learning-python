@@ -276,21 +276,21 @@ Windows:
 ```shell
     jupyter --paths                                                                                          
     config:
-        C:\Users\zhouj\.jupyter
-        C:\Users\zhouj\AppData\Roaming\Python\etc\jupyter
+        ~\.jupyter
+        ~\AppData\Roaming\Python\etc\jupyter
         C:\Python311\etc\jupyter
         C:\ProgramData\jupyter
     data:
-        C:\Users\zhouj\AppData\Roaming\jupyter
-        C:\Users\zhouj\AppData\Roaming\Python\share\jupyter
+        ~\AppData\Roaming\jupyter
+        ~\AppData\Roaming\Python\share\jupyter
         C:\Python311\share\jupyter
         C:\ProgramData\jupyter
     runtime:
-        C:\Users\zhouj\AppData\Roaming\jupyter\runtime
+        ~\AppData\Roaming\jupyter\runtime
 
 
 # Common Lisp, Rust
-C:\Users\zhouj\AppData\Roaming\jupyter\kernels
+~\AppData\Roaming\jupyter\kernels
 
 ```
 
