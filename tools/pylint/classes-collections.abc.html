@@ -1,0 +1,335 @@
+<html>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <div class="mermaid">
+    
+        classDiagram
+          class AsyncGenerator {
+            \_\_slots\_\_ : tuple
+            \_\_anext\_\_()
+            \_\_class_getitem\_\_(item)
+            \_\_subclasshook\_\_(C)
+            aclose()
+            asend(value)*
+            athrow(typ, val, tb)*
+          }
+          class AsyncIterable {
+            \_\_slots\_\_ : tuple
+            \_\_aiter\_\_()*
+            \_\_class_getitem\_\_(item)
+            \_\_subclasshook\_\_(C)
+          }
+          class AsyncIterator {
+            \_\_slots\_\_ : tuple
+            \_\_aiter\_\_()
+            \_\_anext\_\_()*
+            \_\_class_getitem\_\_(item)
+            \_\_subclasshook\_\_(C)
+          }
+          class Awaitable {
+            \_\_slots\_\_ : tuple
+            \_\_await\_\_()*
+            \_\_class_getitem\_\_(item)
+            \_\_subclasshook\_\_(C)
+          }
+          class Buffer {
+            \_\_slots\_\_ : tuple
+            \_\_buffer\_\_()* memoryview
+            \_\_subclasshook\_\_(C)
+          }
+          class ByteString {
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+          }
+          class Callable {
+            \_\_slots\_\_ : tuple
+            \_\_call\_\_()*
+            \_\_class_getitem\_\_(item)
+            \_\_subclasshook\_\_(C)
+          }
+          class Collection {
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+            \_\_subclasshook\_\_(C)
+          }
+          class Container {
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+            \_\_contains\_\_(x)*
+            \_\_subclasshook\_\_(C)
+          }
+          class Coroutine {
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+            \_\_subclasshook\_\_(C)
+            close()
+            send(value)*
+            throw(typ, val, tb)*
+          }
+          class Generator {
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+            \_\_next\_\_()
+            \_\_subclasshook\_\_(C)
+            close()
+            send(value)*
+            throw(typ, val, tb)*
+          }
+          class Hashable {
+            \_\_slots\_\_ : tuple
+            \_\_hash\_\_()*
+            \_\_subclasshook\_\_(C)
+          }
+          class ItemsView {
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+            \_\_contains\_\_(item)
+            \_\_iter\_\_()
+            _from_iterable(it)
+          }
+          class Iterable {
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+            \_\_iter\_\_()*
+            \_\_subclasshook\_\_(C)
+          }
+          class Iterator {
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+            \_\_iter\_\_()
+            \_\_next\_\_()*
+            \_\_subclasshook\_\_(C)
+          }
+          class KeysView {
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+            \_\_contains\_\_(key)
+            \_\_iter\_\_()
+            _from_iterable(it)
+          }
+          class Mapping {
+            \_\_abc_tpflags\_\_ : int
+            \_\_reversed\_\_ : NoneType
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+            \_\_contains\_\_(key)
+            \_\_eq\_\_(other)
+            \_\_getitem\_\_(key)*
+            get(key, default)
+            items()
+            keys()
+            values()
+          }
+          class MappingView {
+            \_\_slots\_\_ : tuple
+            _mapping
+            \_\_class_getitem\_\_(item)
+            \_\_init\_\_(mapping)
+            \_\_len\_\_()
+            \_\_repr\_\_()
+          }
+          class MutableMapping {
+            \_\_marker
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+            \_\_delitem\_\_(key)*
+            \_\_setitem\_\_(key, value)*
+            clear()
+            pop(key, default)
+            popitem()
+            setdefault(key, default)
+            update()
+          }
+          class MutableSequence {
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+            \_\_delitem\_\_(index)*
+            \_\_iadd\_\_(values)
+            \_\_setitem\_\_(index, value)*
+            append(value)
+            clear()
+            extend(values)
+            insert(index, value)*
+            pop(index)
+            remove(value)
+            reverse()
+          }
+          class MutableSet {
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+            \_\_iand\_\_(it)
+            \_\_ior\_\_(it)
+            \_\_isub\_\_(it)
+            \_\_ixor\_\_(it)
+            add(value)*
+            clear()
+            discard(value)*
+            pop()
+            remove(value)
+          }
+          class Reversible {
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+            \_\_reversed\_\_()*
+            \_\_subclasshook\_\_(C)
+          }
+          class Sequence {
+            \_\_abc_tpflags\_\_ : int
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+            \_\_contains\_\_(value)
+            \_\_getitem\_\_(index)*
+            \_\_iter\_\_()
+            \_\_reversed\_\_()
+            count(value)
+            index(value, start, stop)
+          }
+          class Set {
+            \_\_rand\_\_
+            \_\_ror\_\_
+            \_\_rxor\_\_
+            \_\_slots\_\_ : tuple
+            \_\_and\_\_(other)
+            \_\_class_getitem\_\_(item)
+            \_\_eq\_\_(other)
+            \_\_ge\_\_(other)
+            \_\_gt\_\_(other)
+            \_\_le\_\_(other)
+            \_\_lt\_\_(other)
+            \_\_or\_\_(other)
+            \_\_rsub\_\_(other)
+            \_\_sub\_\_(other)
+            \_\_xor\_\_(other)
+            _from_iterable(it)
+            _hash()
+            isdisjoint(other)
+          }
+          class Sized {
+            \_\_slots\_\_ : tuple
+            \_\_len\_\_()*
+            \_\_subclasshook\_\_(C)
+          }
+          class ValuesView {
+            \_\_slots\_\_ : tuple
+            \_\_class_getitem\_\_(item)
+            \_\_contains\_\_(value)
+            \_\_iter\_\_()
+          }
+          class _CallableGenericAlias {
+            \_\_slots\_\_ : tuple
+            \_\_getitem\_\_(item)
+            \_\_new\_\_(origin, args)
+            \_\_reduce\_\_()
+            \_\_repr\_\_()
+          }
+          class _DeprecateByteStringMeta {
+            \_\_instancecheck\_\_(instance)
+            \_\_new\_\_(name, bases, namespace)
+          }
+          class __type_params__ {
+          }
+          class denominator {
+          }
+          class imag {
+          }
+          class numerator {
+          }
+          class object {
+            \_\_delattr\_\_()*
+            \_\_dir\_\_()*
+            \_\_eq\_\_()*
+            \_\_format\_\_()*
+            \_\_ge\_\_()*
+            \_\_getattribute\_\_()*
+            \_\_getstate\_\_()*
+            \_\_gt\_\_()*
+            \_\_hash\_\_()*
+            \_\_init\_\_()*
+            \_\_le\_\_()*
+            \_\_lt\_\_()*
+            \_\_ne\_\_()*
+            \_\_new\_\_()*
+            \_\_reduce\_\_()*
+            \_\_reduce_ex\_\_()*
+            \_\_repr\_\_()*
+            \_\_setattr\_\_()*
+            \_\_sizeof\_\_()*
+            \_\_str\_\_()*
+            \_\_subclasshook\_\_()*
+          }
+          class real {
+          }
+          class type {
+            \_\_call\_\_()*
+            \_\_delattr\_\_()*
+            \_\_dir\_\_()*
+            \_\_eq\_\_()*
+            \_\_format\_\_()*
+            \_\_ge\_\_()*
+            \_\_getattribute\_\_()*
+            \_\_getstate\_\_()*
+            \_\_gt\_\_()*
+            \_\_hash\_\_()*
+            \_\_init\_\_()*
+            \_\_instancecheck\_\_()*
+            \_\_le\_\_()*
+            \_\_lt\_\_()*
+            \_\_ne\_\_()*
+            \_\_new\_\_()*
+            \_\_or\_\_()*
+            \_\_reduce\_\_()*
+            \_\_reduce_ex\_\_()*
+            \_\_repr\_\_()*
+            \_\_ror\_\_()*
+            \_\_setattr\_\_()*
+            \_\_sizeof\_\_()*
+            \_\_str\_\_()*
+            \_\_subclasscheck\_\_()*
+            \_\_subclasses\_\_()*
+            \_\_subclasshook\_\_()*
+            mro()*
+          }
+          AsyncGenerator --|> AsyncIterator
+          AsyncIterable --|> object
+          AsyncIterator --|> AsyncIterable
+          Awaitable --|> object
+          Buffer --|> object
+          ByteString --|> Sequence
+          Callable --|> object
+          Collection --|> Container
+          Collection --|> Iterable
+          Collection --|> Sized
+          Container --|> object
+          Coroutine --|> Awaitable
+          Generator --|> Iterator
+          Hashable --|> object
+          ItemsView --|> MappingView
+          ItemsView --|> Set
+          Iterable --|> object
+          Iterator --|> Iterable
+          KeysView --|> MappingView
+          KeysView --|> Set
+          Mapping --|> Collection
+          MappingView --|> Sized
+          MutableMapping --|> Mapping
+          MutableSequence --|> Sequence
+          MutableSet --|> Set
+          Reversible --|> Iterable
+          Sequence --|> Collection
+          Sequence --|> Reversible
+          Set --|> Collection
+          Sized --|> object
+          ValuesView --|> Collection
+          ValuesView --|> MappingView
+          _CallableGenericAlias --|> type
+          denominator --|> object
+          imag --|> object
+          numerator --|> object
+          real --|> object
+          type --|> object
+          __type_params__ --|> object
+          object --* MutableMapping : \_\_marker
+  
+       </div>
+  </body>
+</html>

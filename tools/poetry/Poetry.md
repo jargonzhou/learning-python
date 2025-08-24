@@ -13,7 +13,12 @@
 $ pipx install poetry
 $ poetry --version
 Poetry (version 2.1.4)
+```
 
+# Basic usage
+* https://python-poetry.org/docs/basic-usage/
+
+```shell
 # create new project
 $ poetry new poetry-sample
 Created package poetry_sample in poetry-sample
@@ -46,8 +51,28 @@ $ poetry run python src/main.py
 Hello poetry_sample
 ```
 
+# Managing dependencies
+* https://python-poetry.org/docs/managing-dependencies/
+
+PEP 621 – Storing project metadata in pyproject.toml
+
+Poetry provides a way to organize your dependencies by **groups**.
+
+```shell
+poetry add pytest --group test
+```
+
 # Commands
 * https://python-poetry.org/docs/cli/
+
+# Configuration
+* https://python-poetry.org/docs/configuration
+  * Default Directories
+
+`config.toml`: `config` command, 
+- windows `%APPDATA%\pypoetry`, UNIX `~/.config/pypoetry`
+
+`poetry.toml`: local configuration `config --local`
 
 # The pyproject.toml file
 * https://python-poetry.org/docs/pyproject/
@@ -124,15 +149,6 @@ You must source this script: $ source D:\workspace\github\learning-python\tools\
 $ source .venv/Scripts/activate
 (poetry-sample-py3.12) $
 ```
-
-# Configuration
-* https://python-poetry.org/docs/configuration
-  * Default Directories
-
-`config.toml`: `config` command, 
-- windows `%APPDATA%\pypoetry`, UNIX `~/.config/pypoetry`
-
-`poetry.toml`: local configuration `config --local`
 
 # VSCode extension
 - [Python Poetry](https://github.com/zeshuaro/vscode-poetry)

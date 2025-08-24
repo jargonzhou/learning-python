@@ -16,7 +16,7 @@
 
 - 3.2.1. None
 - 3.2.2. NotImplemented
-- 3.2.3. Ellipsis
+- 3.2.3. Ellipsis `...` - [ref](https://realpython.com/python-ellipsis/)
 - 3.2.4. `numbers.Number`
     - 3.2.4.1. `numbers.Integral`
     - 3.2.4.2. `numbers.Real` (`float`)
@@ -76,6 +76,36 @@
 - 3.3.10. Customizing positional arguments in class pattern matching
 - 3.3.11. Emulating buffer types
 - 3.3.12. Special method lookup
+
+
+特殊方法:
+
+| Category                          | Method names                                                      |
+| --------------------------------- | ----------------------------------------------------------------- |
+| String/bytes representation       | `__repr__ __str__ __format__ __bytes__ __fspath__`                |
+| Conversion to number              | `__bool__ __complex__ __int__ __float__ __hash__ __index__`       |
+| Emulating collections             | `__len__ __getitem__ __setitem__ __delitem__ __contains__`        |
+| Iteration                         | `__iter__ __aiter__ __next__ __anext__ __reversed__`              |
+| Callable or coroutine execution   | `__call__ __await__`                                              |
+| Context management                | `__enter__ __exit__ __aexit__ __aenter__`                         |
+| Instance creation and destruction | `__new__ __init__ __del__`                                        |
+| Attribute management              | `__getattr__ __getattribute__ __setattr__ __delattr__ __dir__`    |
+| Attribute descriptors             | `__get__ __set__ __delete__ __set_name__`                         |
+| Abstract base classes             | `__instancecheck__ __subclasscheck__`                             |
+| Class metaprogramming             | `__prepare__ __init_subclass__ __class_getitem__ __mro_entries__` |
+
+操作符特殊方法:
+
+| Operator category               | Symbols                                      | Method names                                                                                        |
+| ------------------------------- | -------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Unary numeric                   | `- + abs()`                                  | `__neg__ __pos__ __abs__`                                                                           |
+| Rich comparison                 | `< <= == != > >=`                            | `__lt__ __le__ __eq__ __ne____gt__ __ge__`                                                          |
+| Arithmetic                      | `+ - * / // % @ divmod() round() ** pow()`   | `__add__ __sub__ __mul__ __truediv__ __floordiv__ __mod__ __matmul__ __div mod__ __round__ __pow__` |
+| Reversed arithmetic             | (arithmetic operators with swapped operands) | `__radd__ __rsub__ __rmul__ __rtrue div__ __rfloordiv__ __rmod__ __rmat mul__ __rdivmod__ __rpow__` |
+| Augmented assignment arithmetic | `+= -= *= /= //= %= @= **=`                  | `__iadd__ __isub__ __imul__ __itrue div__ __ifloordiv__ __imod__ __imat mul__ __ipow__`             |
+| Bitwise                         | `& \| ^ << >> ~`                             | `__and__ __or__ __xor__ __lshift__ __rshift__ __invert__`                                           |
+| Reversed bitwise                | (bitwise operators with swapped operands)    | `__rand__ __ror__ __rxor__ __rlshift__ __rrshift__`                                                 |
+
 
 # Coroutines
 - 3.4.1. Awaitable Objects
@@ -172,6 +202,9 @@
 
 > CPython is the reference implementation of Python. It is written in C, meeting the C89 standard (Python 3.11 uses C11) with several select C99 features.
 
+[Stackless Python](https://github.com/stackless-dev/stackless/wiki/): microthreads, channels, scheduling
+- archived 2025-02-13
+
 ### Cython
 * https://cython.org/
 
@@ -253,31 +286,5 @@ Myproject/
 from .. import module1a
 ```
 
-# PEP: Python Enhancement Proposals
-* [PEP 0 – Index of Python Enhancement Proposals (PEPs)](https://peps.python.org/pep-0000/)
-- PEP 8 – Style Guide for Python Code
-- PEP 249 – Python Database API Specification v2.0
-- PEP 257 – Docstring Conventions
-- PEP 484 – Type Hints
-- PEP 557 – Data Classes - `@dataclass`
-- PEP 3333 – Python Web Server Gateway Interface v1.0.1
-  - [WSGI (Web Server Gateway Interface)](https://wsgi.readthedocs.io/)
-  - [ASGI (Asynchronous Server Gateway Interface)](https://asgi.readthedocs.io/)
-
-type key:
-
-* I: Informational
-* P: Process
-* S: Standards Track
-
-status key:
-
-* A: Accepted
-* A: Active
-* D: Deferred
-* `<No letter>`: Draft
-* F: Final
-* P: Provisional
-* R: Rejected
-* S: Superseded
-* W: Withdraw
+# More
+* [The Python Wiki](https://wiki.python.org/moin/)

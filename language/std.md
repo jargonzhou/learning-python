@@ -2,760 +2,229 @@
 * https://docs.python.org/3/library/index.html
 
 # Built-in Functions
-
-## `abs()`
-## `aiter()`
-## `all()`
-## `anext()`
-## `any()`
-## `ascii()`
-## `bin()`
-## `bool`
-## `breakpoint()`
-## `callable()`
-## `chr()`
-## `classmethod()`
-## `compile()`
-## `complex`
-## `delattr()`
-## `dir()`
-## `divmod()`
-## `enumerate()`
-## `eval()`
-## `exec()`
-## `filter()`
-## `float`
-## `format()`
-## `getattr()`
-## `globals()`
-## `hasattr()`
-## `hash()`
-## `help()`
-## `hex()`
-## `id()`
-## `input()`
-## `int`
-## `isinstance()`
-## `issubclass()`
-## `iter()`
-## `len()`
-## `locals()`
-## `map()`
-## `max()`
-## `min()`
-## `next()`
-## `object`
-## `oct()`
-## `open()`
-## `ord()`
-## `pow()`
-## `print()`
-## `property`
-## `repr()`
-## `reversed()`
-## `round()`
-## `setattr()`
-## `slice`
-## `sorted()`
-## `staticmethod()`
-## `sum()`
-## `super`
-## `type`
-## `vars()`
-## `zip()`
-## `__import__()`
-
+[bif.md](./std/bif.md)
 # Built-in Constants
-
-## `False`
-## `True`
-## `None`
-## `NotImplemented`
-## Ellipsis
-## `__debug__`
-## Constants added by the site module
-- `quit(code=None)`
-- `exit(code=None)`
-- `copyright`, `credits`
-- `license`
-
-
+[bic.md](./std/bic.md)
 # Built-in Types
-
-## Truth Value Testing
-
-## Boolean Operations — `and`, `or`, `not`
-
-## Comparisons
-
-## Numeric Types — `int`, `float`, `complex`
-
-## Boolean Type - `bool`
-
-## Iterator Types
-
-## Sequence Types — `list`, `tuple`, `range`
-
-## Text Sequence Type — `str`
-
-## Binary Sequence Types — `bytes`, `bytearray`, `memoryview`
-
-## Set Types — `set`, `frozenset`
-
-## Mapping Types — `dict`
-
-## Context Manager Types
-
-## Type Annotation Types — Generic Alias, Union
-
-## Other Built-in Types
-
-## Special Attributes
-
-## Integer string conversion length limitation
-
+[bit.md](./std/bit.md)
 # Built-in Exceptions
-
-## Exception context
-
-## Inheriting from built-in exceptions
-
-## Base classes
-
-## Concrete exceptions
-
-## Warnings
-
-## Exception groups
-
-## Exception hierarchy
-
+[bie.md](./std/bie.md)
 # Text Processing Services
-
-## `string` — Common string operations
-
-```python
-# String constants
-string.ascii_letters
-string.ascii_lowercase
-string.ascii_uppercase
-string.digits
-string.hexdigits
-string.octdigits
-string.punctuation
-string.printable
-string.whitespace
-
-# Custom String Formatting
-class string.Formatter
-```
-
-Format String Syntax
-```EBNF
-replacement_field ::=  "{" [field_name] ["!" conversion] [":" format_spec] "}"
-field_name        ::=  arg_name ("." attribute_name | "[" element_index "]")*
-arg_name          ::=  [identifier | digit+]
-attribute_name    ::=  identifier
-element_index     ::=  digit+ | index_string
-index_string      ::=  <any source character except "]"> +
-conversion        ::=  "r" | "s" | "a"
-format_spec       ::=  <described in the next section>
-```
-Format Specification Mini-Language
-```EBNF
-format_spec     ::=  [[fill]align][sign][#][0][width][grouping_option][.precision][type]
-fill            ::=  <any character>
-align           ::=  "<" | ">" | "=" | "^"
-sign            ::=  "+" | "-" | " "
-width           ::=  digit+
-grouping_option ::=  "_" | ","
-precision       ::=  digit+
-type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" 
-					| "g" | "G" | "n" | "o" | "s" | "x" | "X" | "%"
-```
-
-```python
-# Template strings
-class string.Template(template)
-```
-
-
-## `re` — Regular expression operations
-
-## `difflib` — Helpers for computing deltas
-
-## `textwrap` — Text wrapping and filling
-
-## `unicodedata` — Unicode Database
-
-## `stringprep` — Internet String Preparation
-
-## `readline` — GNU readline interface
-
-## `rlcompleter` — Completion function for GNU readline
-
+- [`string`— Common string operations](./std/string.md)
+- [`re`— Regular expression operations](./std/re.md)
+- [`difflib`— Helpers for computing deltas](./std/difflib.md)
+- [`textwrap`— Text wrapping and filling](./std/textwrap.md)
+- [`unicodedata`— Unicode Database](./std/unicodedata.md)
+- [`stringprep`— Internet String Preparation](./std/stringprep.md)
+- [`readline`— GNU readline interface](./std/readline.md)
+- [`rlcompleter`— Completion function for GNU readline](./std/rlcompleter.md)
 # Binary Data Services
-
-## `struct` — Interpret bytes as packed binary data
-
-## `codecs` — Codec registry and base classes
-
+- [`struct`— Interpret bytes as packed binary data](./std/struct.md)
+- [`codecs`— Codec registry and base classes](./std/codecs.md)
 # Data Types
-
-## `datetime` — Basic date and time types
-
-## `zoneinfo` — IANA time zone support
-
-## `calendar` — General calendar-related functions
-
-## `collections` — Container datatypes
-
-## `collections.abc` — Abstract Base Classes for Containers
-
-## `heapq` — Heap queue algorithm
-
-## `bisect` — Array bisection algorithm
-
-## `array` — Efficient arrays of numeric values
-
-## `weakref` — Weak references
-
-## `types` — Dynamic type creation and names for built-in types
-
-## `copy` — Shallow and deep copy operations
-
-## `pprint` — Data pretty printer
-
-## `reprlib` — Alternate `repr()` implementation
-
-## `enum` — Support for enumerations
-
-## `graphlib` — Functionality to operate with graph-like structures
-
+- [`datetime`— Basic date and time types](./std/datetime.md)
+- [`zoneinfo`— IANA time zone support](./std/zoneinfo.md)
+- [`calendar`— General calendar-related functions](./std/calendar.md)
+- [`collections`— Container datatypes](./std/collections.md)
+- [`heapq`— Heap queue algorithm](./std/heapq.md)
+- [`bisect`— Array bisection algorithm](./std/bisect.md)
+- [`array`— Efficient arrays of numeric values](./std/array.md)
+- [`weakref`— Weak references](./std/weakref.md)
+- [`types`— Dynamic type creation and names for built-in types](./std/types.md)
+- [`copy`— Shallow and deep copy operations](./std/copy.md)
+- [`pprint`— Data pretty printer](./std/pprint.md)
+- [`reprlib`— Alternate `repr()` implementation](./std/reprlib.md)
+- [`enum`— Support for enumerations](./std/enum.md)
+- [`graphlib`— Functionality to operate with graph-like structures](./std/graphlib.md)
 # Numeric and Mathematical Modules
-
-## `numbers` — Numeric abstract base classes
-
-## `math` — Mathematical functions
-
-## `cmath` — Mathematical functions for complex numbers
-
-## `decimal` — Decimal fixed point and floating point arithmetic
-
-## `fractions` — Rational numbers
-
-## `random` — Generate pseudo-random numbers
-
-## `statistics` — Mathematical statistics functions
-
+- [`numbers`— Numeric abstract base classes](./std/numbers.md)
+- [`math`— Mathematical functions](./std/math.md)
+- [`cmath`— Mathematical functions for complex numbers](./std/cmath.md)
+- [`decimal`— Decimal fixed point and floating point arithmetic](./std/decimal.md)
+- [`fractions`— Rational numbers](./std/fractions.md)
+- [`random`— Generate pseudo-random numbers](./std/random.md)
+- [`statistics`— Mathematical statistics functions](./std/statistics.md)
 # Functional Programming Modules
-
-## `itertools` — Functions creating iterators for efficient looping
-
-## `functools` — Higher-order functions and operations on callable objects
-
-## `operator` — Standard operators as functions
-
+- [`itertools`— Functions creating iterators for efficient looping](./std/itertools.md)
+- [`functools`— Higher-order functions and operations on callable objects](./std/functools.md)
+- [`operator`— Standard operators as functions](./std/operator.md)
 # File and Directory Access
-
-## `pathlib` — Object-oriented filesystem paths
-
-## `os.path` — Common pathname manipulations
-
-## `fileinput` — Iterate over lines from multiple input streams
-
-## `stat` — Interpreting `stat()` results
-
-## `filecmp` — File and Directory Comparisons
-
-## `tempfile` — Generate temporary files and directories
-
-## `glob` — Unix style pathname pattern expansion
-
-## `fnmatch` — Unix filename pattern matching
-
-## `linecache` — Random access to text lines
-
-## `shutil` — High-level file operations
-
+- [`pathlib`— Object-oriented filesystem paths](./std/pathlib.md)
+- [`os.path`— Common pathname manipulations](./std/os.path.md)
+- [`fileinput`— Iterate over lines from multiple input streams](./std/fileinput.md)
+- [`stat`— Interpreting `stat()` results](./std/stat.md)
+- [`filecmp`— File and Directory Comparisons](./std/filecmp.md)
+- [`tempfile`— Generate temporary files and directories](./std/tempfile.md)
+- [`glob`— Unix style pathname pattern expansion](./std/glob.md)
+- [`fnmatch`— Unix filename pattern matching](./std/fnmatch.md)
+- [`linecache`— Random access to text lines](./std/linecache.md)
+- [`shutil`— High-level file operations](./std/shutil.md)
 # Data Persistence
-
-## `pickle` — Python object serialization
-
-## `copyreg` — Register `pickle` support functions
-
-## `shelve` — Python object persistence
-
-## `marshal` — Internal Python object serialization
-
-## `dbm` — Interfaces to Unix “databases”
-
-## `sqlite3` — DB-API 2.0 interface for SQLite databases
-
+- [`pickle`— Python object serialization](./std/pickle.md)
+- [`copyreg`— Register `pickle` support functions](./std/copyreg.md)
+- [`shelve`— Python object persistence](./std/shelve.md)
+- [`marshal`— Internal Python object serialization](./std/marshal.md)
+- [`dbm`— Interfaces to Unix “databases”](./std/dbm.md)
+- [`sqlite3`— DB-API 2.0 interface for SQLite databases](./std/sqlite3.md)
 # Data Compression and Archiving
-
-## `zlib` — Compression compatible with **gzip**
-
-## `gzip` — Support for **gzip** files
-
-## `bz2` — Support for **bzip2** compression
-
-## `lzma` — Compression using the LZMA algorithm
-
-## `zipfile` — Work with ZIP archives
-
-## `tarfile` — Read and write tar archive files
-
+- [`zlib`— Compression compatible with **gzip**](./std/zlib.md)
+- [`gzip`— Support for **gzip** files](./std/gzip.md)
+- [`bz2`— Support for **bzip2** compression](./std/bz2.md)
+- [`lzma`— Compression using the LZMA algorithm](./std/lzma.md)
+- [`zipfile`— Work with ZIP archives](./std/zipfile.md)
+- [`tarfile`— Read and write tar archive files](./std/tarfile.md)
 # File Formats
-
-## `csv` — CSV File Reading and Writing
-
-## `configparser` — Configuration file parser
-
-## `tomllib` — Parse TOML files
-
-## `netrc` — netrc file processing
-
-## `plistlib` — Generate and parse Apple `.plist` files
-
+- [`csv`— CSV File Reading and Writing](./std/csv.md)
+- [`configparser`— Configuration file parser](./std/configparser.md)
+- [`tomllib`— Parse TOML files](./std/tomllib.md)
+- [`netrc`— netrc file processing](./std/netrc.md)
+- [`plistlib`— Generate and parse Apple `.plist` files](./std/plistlib.md)
 # Cryptographic Services
-
-## `hashlib` — Secure hashes and message digests
-
-## `hmac` — Keyed-Hashing for Message Authentication
-
-## `secrets` — Generate secure random numbers for managing secrets
-
+- [`hashlib`— Secure hashes and message digests](./std/hashlib.md)
+- [`hmac`— Keyed-Hashing for Message Authentication](./std/hmac.md)
+- [`secrets`— Generate secure random numbers for managing secrets](./std/secrets.md)
 # Generic Operating System Services
-
-## `os` — Miscellaneous operating system interfaces
-
-## `io` — Core tools for working with streams
-
-## `time` — Time access and conversions
-
-## `argparse` — Parser for command-line options, arguments and sub-commands
-
-## `getopt` — C-style parser for command line options
-
-## `logging` — Logging facility for Python
-
-## `logging.config` — Logging configuration
-
-## `logging.handlers` — Logging handlers
-
-## `getpass` — Portable password input
-
-## `curses` — Terminal handling for character-cell displays
-
-## `curses.textpad` — Text input widget for curses programs
-
-## `curses.ascii` — Utilities for ASCII characters
-
-## `curses.panel` — A panel stack extension for curses
-
-## `platform` — Access to underlying platform’s identifying data
-
-## `errno` — Standard errno system symbols
-
-## `ctypes` — A foreign function library for Python
-
+- [`os`— Miscellaneous operating system interfaces](./std/os.md)
+- [`io`— Core tools for working with streams](./std/io.md)
+- [`time`— Time access and conversions](./std/time.md)
+- [`logging`— Logging facility for Python](./std/logging.md)
+- [`platform`— Access to underlying platform’s identifying data](./std/platform.md)
+- [`errno`— Standard errno system symbols](./std/errno.md)
+- [`ctypes`— A foreign function library for Python](./std/ctypes.md)
+# Command-line interface libraries
+- [`argparse`— Parser for command-line options, arguments and sub-commands](./std/argparse.md)
+- [optparse — Parser for command line options](./std/optparse.md)
+- [`getpass`— Portable password input](./std/getpass.md)
+fileinput — Iterate over lines from multiple input streams
+- [`curses`— Terminal handling for character-cell displays](./std/curses.md)
+- [`cmd`— Support for line-oriented command interpreters](./std/cmd.md)
 # Concurrent Execution
-
-## `threading` — Thread-based parallelism
-
-## `multiprocessing` — Process-based parallelism
-
-## `multiprocessing.shared_memory` — Shared memory for direct access across processes
-
-## The `concurrent` package
-
-## `concurrent.futures` — Launching parallel tasks
-
-## `subprocess` — Subprocess management
-
-## `sched` — Event scheduler
-
-## `queue` — A synchronized queue class
-
-## `contextvars` — Context Variables
-
-## `_thread` — Low-level threading API
-
+- [`threading`— Thread-based parallelism](./std/threading.md)
+- [`multiprocessing`— Process-based parallelism](./std/multiprocessing.md)
+- [`multiprocessing.shared_memory`— Shared memory for direct access across processes](./std/multiprocessing.shared_memory.md)
+- [`concurrent`— The `concurrent` package](./std/concurrent.md)
+- [`concurrent.futures`— Launching parallel tasks](./std/concurrent.futures.md)
+- [`subprocess`— Subprocess management](./std/subprocess.md)
+- [`sched`— Event scheduler](./std/sched.md)
+- [`queue`— A synchronized queue class](./std/queue.md)
+- [`contextvars`— Context Variables](./std/contextvars.md)
+- [`_thread`— Low-level threading API](./std/_thread.md)
 # Networking and Interprocess Communication
-
-## `asyncio` — Asynchronous I/O
-
-## `socket` — Low-level networking interface
-
-## `ssl` — TLS/SSL wrapper for socket objects
-
-## `select` — Waiting for I/O completion
-
-## `selectors` — High-level I/O multiplexing
-
-## `signal` — Set handlers for asynchronous events
-
-## `mmap` — Memory-mapped file support
-
+- [`asyncio`— Asynchronous I/O](./std/asyncio.md)
+- [`socket`— Low-level networking interface](./std/socket.md)
+- [`ssl`— TLS/SSL wrapper for socket objects](./std/ssl.md)
+- [`select`— Waiting for I/O completion](./std/select.md)
+- [`selectors`— High-level I/O multiplexing](./std/selectors.md)
+- [`signal`— Set handlers for asynchronous events](./std/signal.md)
+- [`mmap`— Memory-mapped file support](./std/mmap.md)
 # Internet Data Handling
-
-## `email` — An email and MIME handling package
-
-## `json` — JSON encoder and decoder
-
-## `mailbox` — Manipulate mailboxes in various formats
-
-## `mimetypes` — Map filenames to MIME types
-
-## `base64` — Base16, Base32, Base64, Base85 Data Encodings
-
-## `binascii` — Convert between binary and ASCII
-
-## `quopri` — Encode and decode MIME quoted-printable data
-
+- [`email`— An email and MIME handling package](./std/email.md)
+- [`json`— JSON encoder and decoder](./std/json.md)
+- [`mailbox`— Manipulate mailboxes in various formats](./std/mailbox.md)
+- [`mimetypes`— Map filenames to MIME types](./std/mimetypes.md)
+- [`base64`— Base16, Base32, Base64, Base85 Data Encodings](./std/base64.md)
+- [`binascii`— Convert between binary and ASCII](./std/binascii.md)
+- [`quopri`— Encode and decode MIME quoted-printable data](./std/quopri.md)
 # Structured Markup Processing Tools
-
-## `html` — HyperText Markup Language support
-
-## `html.parser` — Simple HTML and XHTML parser
-
-## `html.entities` — Definitions of HTML general entities
-
-## XML Processing Modules
-
-## `xml.etree.ElementTree` — The ElementTree XML API
-
-## `xml.dom` — The Document Object Model API
-
-## `xml.dom.minidom` — Minimal DOM implementation
-
-## `xml.dom.pulldom` — Support for building partial DOM trees
-
-## `xml.sax` — Support for SAX2 parsers
-
-## `xml.sax.handler` — Base classes for SAX handlers
-
-## `xml.sax.saxutils` — SAX Utilities
-
-## `xml.sax.xmlreader` — Interface for XML parsers
-
-## `xml.parsers.expat` — Fast XML parsing using Expat
-
+- [`html`— HyperText Markup Language support](./std/html.md)
+- [`xml`— XML Processing Modules](./std/xml.md)
 # Internet Protocols and Support
-
-## `webbrowser` — Convenient web-browser controller
-
-## `wsgiref` — WSGI Utilities and Reference Implementation
-
-## `urllib` — URL handling modules
-
-## `urllib.request` — Extensible library for opening URLs
-
-## `urllib.response` — Response classes used by urllib
-
-## `urllib.parse` — Parse URLs into components
-
-## `urllib.error` — Exception classes raised by urllib.request
-
-## `urllib.robotparser` — Parser for robots.txt
-
-## `http` — HTTP modules
-```shell
-python -m http.server
-python -m http.server 9000
-python -m http.server --bind 127.0.0.1
-python -m http.server --directory /tmp/
-```
-## `http.client` — HTTP protocol client
-
-## `ftplib` — FTP protocol client
-
-## `poplib` — POP3 protocol client
-
-## `imaplib` — IMAP4 protocol client
-
-## `smtplib` — SMTP protocol client
-
-## `uuid` — UUID objects according to **RFC 4122**
-
-## `socketserver` — A framework for network servers
-
-## `http.server` — HTTP servers
-
-## `http.cookies` — HTTP state management
-
-## `http.cookiejar` — Cookie handling for HTTP clients
-
-## `xmlrpc` — XMLRPC server and client modules
-
-## `xmlrpc.client` — XML-RPC client access
-
-## `xmlrpc.server` — Basic XML-RPC servers
-
-## `ipaddress` — IPv4/IPv6 manipulation library
-
+- [`webbrowser`— Convenient web-browser controller](./std/webbrowser.md)
+- [`wsgiref`— WSGI Utilities and Reference Implementation](./std/wsgiref.md)
+- [`urllib`— URL handling modules](./std/urllib.md)
+- [`http`— HTTP modules](./std/http.md)
+- [`ftplib`— FTP protocol client](./std/ftplib.md)
+- [`poplib`— POP3 protocol client](./std/poplib.md)
+- [`imaplib`— IMAP4 protocol client](./std/imaplib.md)
+- [`smtplib`— SMTP protocol client](./std/smtplib.md)
+- [`uuid`— UUID objects according to **RFC 4122**](./std/uuid.md)
+- [`socketserver`— A framework for network servers](./std/socketserver.md)
+- [`xmlrpc`— XMLRPC server and client modules](./std/xmlrpc.md)
+- [`ipaddress`— IPv4/IPv6 manipulation library](./std/ipaddress.md)
 # Multimedia Services
-
-## `wave` — Read and write WAV files
-
-## `colorsys` — Conversions between color systems
-
+- [`wave`— Read and write WAV files](./std/wave.md)
+- [`colorsys`— Conversions between color systems](./std/colorsys.md)
 # Internationalization
-
-## `gettext` — Multilingual internationalization services
-
-## `locale` — Internationalization services
-
-# Program Frameworks
-
-## `turtle` — Turtle graphics
-
-## `cmd` — Support for line-oriented command interpreters
-
-## `shlex` — Simple lexical analysis
-
+- [`gettext`— Multilingual internationalization services](./std/gettext.md)
+- [`locale`— Internationalization services](./std/locale.md)
 # Graphical User Interfaces with Tk
-
-## `tkinter` — Python interface to Tcl/Tk
-
-## `tkinter.colorchooser` — Color choosing dialog
-
-## `tkinter.font` — Tkinter font wrapper
-
-## Tkinter Dialogs
-
-## `tkinter.messagebox` — Tkinter message prompts
-
-## `tkinter.scrolledtext` — Scrolled Text Widget
-
-## `tkinter.dnd` — Drag and drop support
-
-## `tkinter.ttk` — Tk themed widgets
-
-## `tkinter.tix` — Extension widgets for Tk
-
-## IDLE
-
+- [`tkinter`— Python interface to Tcl/Tk](./std/tkinter.md)
+- IDLE — Python editor and shell
+- [`turtle`— Turtle graphics](./std/turtle.md)
 # Development Tools
-
-## `typing` — Support for type hints
-
-Added in version 3.5.
-This module provides runtime support for type hints.
-- Static Typing with Python
-
-## `pydoc` — Documentation generator and online help system
-
-## Python Development Mode
-
-## `doctest` — Test interactive Python examples
-
-## `unittest` — Unit testing framework
-
-## `unittest.mock` — mock object library
-
-## `unittest.mock` — getting started
-
-## 2to3 — Automated Python 2 to 3 code translation
-
-## `test` — Regression tests package for Python
-
-## `test.support` — Utilities for the Python test suite
-
-## `test.support.socket_helper` — Utilities for socket tests
-
-## `test.support.script_helper` — Utilities for the Python execution tests
-
-## `test.support.bytecode_helper` — Support tools for testing correct bytecode generation
-
-## `test.support.threading_helper` — Utilities for threading tests
-
-## `test.support.os_helper` — Utilities for os tests
-
-## `test.support.import_helper` — Utilities for import tests
-
-## `test.support.warnings_helper` — Utilities for warnings tests
-
+- [`typing`— Support for type hints](./std/typing.md)
+- [`pydoc`— Documentation generator and online help system](./std/pydoc.md)
+- Python Development Mode
+- [`doctest`— Test interactive Python examples](./std/doctest.md)
+- [`unittest`— Unit testing framework](./std/unittest.md)
+- [`test`— Regression tests package for Python](./std/test.md)
 # Debugging and Profiling
-
-## Audit events table
-
-## `bdb` — Debugger framework
-
-## `faulthandler` — Dump the Python traceback
-
-## `pdb` — The Python Debugger
-
-## The Python Profilers
-
-## `timeit` — Measure execution time of small code snippets
-
-## `trace` — Trace or track Python statement execution
-
-## `tracemalloc` — Trace memory allocations
-
+Audit events table
+- [`bdb`— Debugger framework](./std/bdb.md)
+- [`faulthandler`— Dump the Python traceback](./std/faulthandler.md)
+- [`pdb`— The Python Debugger](./std/pdb.md)
+- [`cProfile profile`— The Python Profilers](./std/cProfile profile.md)
+- [`timeit`— Measure execution time of small code snippets](./std/timeit.md)
+- [`trace`— Trace or track Python statement execution](./std/trace.md)
+- [`tracemalloc`— Trace memory allocations](./std/tracemalloc.md)
 # Software Packaging and Distribution
-
-## `ensurepip` — Bootstrapping the `pip` installer
-
-## `venv` — Creation of virtual environments
-
-## `zipapp` — Manage executable Python zip archives
-
+- [`ensurepip`— Bootstrapping the `pip` installer](./std/ensurepip.md)
+- [`venv`— Creation of virtual environments](./std/venv.md)
+- [`zipapp`— Manage executable Python zip archives](./std/zipapp.md)
 # Python Runtime Services
-
-## `sys` — System-specific parameters and functions
-
-## `sys.monitoring` — Execution event monitoring
-
-## `sysconfig` — Provide access to Python’s configuration information
-
-## `builtins` — Built-in objects
-
-## `__main__` — Top-level code environment
-
-## `warnings` — Warning control
-
-## `dataclasses` — Data Classes
-
-## `contextlib` — Utilities for `with`-statement contexts
-
-## `abc` — Abstract Base Classes
-
-## `atexit` — Exit handlers
-
-## `traceback` — Print or retrieve a stack traceback
-
-## `__future__` — Future statement definitions
-
-## `gc` — Garbage Collector interface
-
-## `inspect` — Inspect live objects
-
-## `site` — Site-specific configuration hook
-
+- [`sys`— System-specific parameters and functions](./std/sys.md)
+- [`sysconfig`— Provide access to Python’s configuration information](./std/sysconfig.md)
+- [`builtins`— Built-in objects](./std/builtins.md)
+- [`__main__`— Top-level code environment](./std/__main__.md)
+- [`warnings`— Warning control](./std/warnings.md)
+- [`dataclasses`— Data Classes](./std/dataclasses.md)
+- [`contextlib`— Utilities for `with`-statement contexts](./std/contextlib.md)
+- [`abc`— Abstract Base Classes](./std/abc.md)
+- [`atexit`— Exit handlers](./std/atexit.md)
+- [`traceback`— Print or retrieve a stack traceback](./std/traceback.md)
+- [`__future__`— Future statement definitions](./std/__future__.md)
+- [`gc`— Garbage Collector interface](./std/gc.md)
+- [`inspect`— Inspect live objects](./std/inspect.md)
+- [`site`— Site-specific configuration hook](./std/site.md)
 # Custom Python Interpreters
-
-## `code` — Interpreter base classes
-
-## `codeop` — Compile Python code
-
+- [`code`— Interpreter base classes](./std/code.md)
+- [`codeop`— Compile Python code](./std/codeop.md)
 # Importing Modules
-
-## `zipimport` — Import modules from Zip archives
-
-## `pkgutil` — Package extension utility
-
-## `modulefinder` — Find modules used by a script
-
-## `runpy` — Locating and executing Python modules
-
-## `importlib` — The implementation of `import`
-
-## `importlib.resources` – Package resource reading, opening and access
-
-## `importlib.resources.abc` – Abstract base classes for resources
-
-## `importlib.metadata` – Accessing package metadata
-
+- [`zipimport`— Import modules from Zip archives](./std/zipimport.md)
+- [`pkgutil`— Package extension utility](./std/pkgutil.md)
+- [`modulefinder`— Find modules used by a script](./std/modulefinder.md)
+- [`runpy`— Locating and executing Python modules](./std/runpy.md)
+- [`importlib`— The implementation of `import`](./std/importlib.md)
 ## The initialization of the `sys.path` module search path
-
 # Python Language Services
-
-## `ast` — Abstract Syntax Trees
-
-## `symtable` — Access to the compiler’s symbol tables
-
-## `token` — Constants used with Python parse trees
-
-## `keyword` — Testing for Python keywords
-
-## `tokenize` — Tokenizer for Python source
-
-## `tabnanny` — Detection of ambiguous indentation
-
-## `pyclbr` — Python module browser support
-
-## `py_compile` — Compile Python source files
-
-## `compileall` — Byte-compile Python libraries
-
-## `dis` — Disassembler for Python bytecode
-
-## `pickletools` — Tools for pickle developers
-
+- [`ast`— Abstract Syntax Trees](./std/ast.md)
+- [`symtable`— Access to the compiler’s symbol tables](./std/symtable.md)
+- [`token`— Constants used with Python parse trees](./std/token.md)
+- [`keyword`— Testing for Python keywords](./std/keyword.md)
+- [`tokenize`— Tokenizer for Python source](./std/tokenize.md)
+- [`tabnanny`— Detection of ambiguous indentation](./std/tabnanny.md)
+- [`pyclbr`— Python module browser support](./std/pyclbr.md)
+- [`py_compile`— Compile Python source files](./std/py_compile.md)
+- [`compileall`— Byte-compile Python libraries](./std/compileall.md)
+- [`dis`— Disassembler for Python bytecode](./std/dis.md)
+- [`pickletools`— Tools for pickle developers](./std/pickletools.md)
 # MS Windows Specific Services
-
-## `msvcrt` — Useful routines from the MS VC++ runtime
-
-## `winreg` — Windows registry access
-
-## `winsound` — Sound-playing interface for Windows
-
+- [`msvcrt`— Useful routines from the MS VC++ runtime](./std/msvcrt.md)
+- [`winreg`— Windows registry access](./std/winreg.md)
+- [`winsound`— Sound-playing interface for Windows](./std/winsound.md)
 # Unix Specific Services
-
-## `posix` — The most common POSIX system calls
-
-## `pwd` — The password database
-
-## `grp` — The group database
-
-## `termios` — POSIX style tty control
-
-## `tty` — Terminal control functions
-
-## `pty` — Pseudo-terminal utilities
-
-## `fcntl` — The `fcntl` and `ioctl` system calls
-
-## `resource` — Resource usage information
-
-## `syslog` — Unix syslog library routines
-
+- [shlex — Simple lexical analysis](./std/shlex.md)
+- [`posix`— The most common POSIX system calls](./std/posix.md)
+- [`pwd`— The password database](./std/pwd.md)
+- [`grp`— The group database](./std/grp.md)
+- [`termios`— POSIX style tty control](./std/termios.md)
+- [`tty`— Terminal control functions](./std/tty.md)
+- [`pty`— Pseudo-terminal utilities](./std/pty.md)
+- [`fcntl`— The `fcntl` and `ioctl` system calls](./std/fcntl.md)
+- [`resource`— Resource usage information](./std/resource.md)
+- [`syslog`— Unix syslog library routines](./std/syslog.md)
 # Modules command-line interface (CLI)
-
 # Superseded Modules
-
-## `aifc` — Read and write AIFF and AIFC files
-
-## `audioop` — Manipulate raw audio data
-
-## `cgi` — Common Gateway Interface support
-
-## `cgitb` — Traceback manager for CGI scripts
-
-## `chunk` — Read IFF chunked data
-
-## `crypt` — Function to check Unix passwords
-
-## `imghdr` — Determine the type of an image
-
-## `mailcap` — Mailcap file handling
-
-## `msilib` — Read and write Microsoft Installer files
-
-## `nis` — Interface to Sun’s NIS (Yellow Pages)
-
-## `nntplib` — NNTP protocol client
-
-## `optparse` — Parser for command line options
-
-## `ossaudiodev` — Access to OSS-compatible audio devices
-
-## `pipes` — Interface to shell pipelines
-
-## `sndhdr` — Determine type of sound file
-
-## `spwd` — The shadow password database
-
-## `sunau` — Read and write Sun AU files
-
-## `telnetlib` — Telnet client
-
-## `uu` — Encode and decode uuencode files
-
-## `xdrlib` — Encode and decode XDR data
-
+PEP 594 – Removing dead batteries from the standard library
 # Security Considerations
 - https://docs.python.org/3/library/security_warnings.html

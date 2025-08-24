@@ -1,5 +1,6 @@
 # Black
 * https://black.readthedocs.io/
+* https://pypi.org/project/black/
 
 > The uncompromising code formatter
 > 

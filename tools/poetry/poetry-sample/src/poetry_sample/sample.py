@@ -1,2 +1,8 @@
+"""
+Module docstring
+"""
+
+
 def hello():
-    return "Hello poetry_sample"
+  """Greeting"""
+  return "Hello poetry_sample"

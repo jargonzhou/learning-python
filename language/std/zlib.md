@@ -1,0 +1,1 @@
+# Compression compatible with **gzip**

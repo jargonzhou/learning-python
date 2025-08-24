@@ -1,0 +1,32 @@
+[project]
+name = "fluent-python"
+version = "0.1.0"
+description = ""
+authors = [{ name = "jargonzhou", email = "zhoujiagen@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["numpy (>=2.3.2,<3.0.0)"]
+
+[tool.poetry]
+packages = [{ include = "data_structures", from = "src" }]
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.4.1"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.17.1"
+
+# https://mypy.readthedocs.io/en/latest/config_file.html#using-a-pyproject-toml-file
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+exclude = ['tests/.*/test_.*\.py']
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

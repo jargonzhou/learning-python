@@ -12,8 +12,6 @@ $ pip install jupyter
 
 # Kernels
 
-* [[Jupyter Kernels]]
-
 ## BeakerX: Beaker extensions for Jupyter
 
 * [Code](https://github.com/twosigma/beakerx)

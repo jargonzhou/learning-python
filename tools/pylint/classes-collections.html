@@ -1,0 +1,329 @@
+<html>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <div class="mermaid">
+    
+        classDiagram
+          class ChainMap {
+            \_\_copy\_\_
+            maps : list
+            parents
+            \_\_bool\_\_()
+            \_\_class_getitem\_\_(item)
+            \_\_contains\_\_(key)
+            \_\_delitem\_\_(key)
+            \_\_getitem\_\_(key)
+            \_\_init\_\_()
+            \_\_ior\_\_(other)
+            \_\_iter\_\_()
+            \_\_len\_\_()
+            \_\_missing\_\_(key)
+            \_\_or\_\_(other)
+            \_\_repr\_\_()
+            \_\_ror\_\_(other)
+            \_\_setitem\_\_(key, value)
+            clear()
+            copy()
+            fromkeys(iterable)
+            get(key, default)
+            new_child(m)
+            pop(key)
+            popitem()
+          }
+          class Counter {
+            \_\_add\_\_(other)
+            \_\_and\_\_(other)
+            \_\_class_getitem\_\_(item)
+            \_\_delitem\_\_(elem)
+            \_\_eq\_\_(other)
+            \_\_ge\_\_(other)
+            \_\_gt\_\_(other)
+            \_\_iadd\_\_(other)
+            \_\_iand\_\_(other)
+            \_\_init\_\_()
+            \_\_ior\_\_(other)
+            \_\_isub\_\_(other)
+            \_\_le\_\_(other)
+            \_\_lt\_\_(other)
+            \_\_missing\_\_(key)
+            \_\_ne\_\_(other)
+            \_\_neg\_\_()
+            \_\_or\_\_(other)
+            \_\_pos\_\_()
+            \_\_reduce\_\_()
+            \_\_repr\_\_()
+            \_\_sub\_\_(other)
+            _keep_positive()
+            copy()
+            elements()
+            fromkeys(iterable, v)*
+            most_common(n)
+            subtract()
+            total()
+            update()
+          }
+          class OrderedDict {
+            \_\_class_getitem\_\_(item)
+            \_\_reversed\_\_()
+            move_to_end(key, last)*
+          }
+          class UserDict {
+            data : dict
+            \_\_class_getitem\_\_(item)
+            \_\_contains\_\_(key)
+            \_\_copy\_\_()
+            \_\_delitem\_\_(key)
+            \_\_getitem\_\_(key)
+            \_\_init\_\_()
+            \_\_ior\_\_(other)
+            \_\_iter\_\_()
+            \_\_len\_\_()
+            \_\_or\_\_(other)
+            \_\_repr\_\_()
+            \_\_ror\_\_(other)
+            \_\_setitem\_\_(key, item)
+            copy()
+            fromkeys(iterable, value)
+            get(key, default)
+          }
+          class UserList {
+            \_\_rmul\_\_
+            data : list
+            \_\_add\_\_(other)
+            \_\_cast(other)
+            \_\_class_getitem\_\_(item)
+            \_\_contains\_\_(item)
+            \_\_copy\_\_()
+            \_\_delitem\_\_(i)
+            \_\_eq\_\_(other)
+            \_\_ge\_\_(other)
+            \_\_getitem\_\_(i)
+            \_\_gt\_\_(other)
+            \_\_iadd\_\_(other)
+            \_\_imul\_\_(n)
+            \_\_init\_\_(initlist)
+            \_\_le\_\_(other)
+            \_\_len\_\_()
+            \_\_lt\_\_(other)
+            \_\_mul\_\_(n)
+            \_\_radd\_\_(other)
+            \_\_repr\_\_()
+            \_\_setitem\_\_(i, item)
+            append(item)
+            clear()
+            copy()
+            count(item)
+            extend(other)
+            index(item)
+            insert(i, item)
+            pop(i)
+            remove(item)
+            reverse()
+            sort()
+          }
+          class UserString {
+            \_\_rmul\_\_
+            data : str
+            maketrans : builtin_function_or_method
+            \_\_add\_\_(other)
+            \_\_class_getitem\_\_(item)
+            \_\_complex\_\_()
+            \_\_contains\_\_(char)
+            \_\_eq\_\_(string)
+            \_\_float\_\_()
+            \_\_ge\_\_(string)
+            \_\_getitem\_\_(index)
+            \_\_getnewargs\_\_()
+            \_\_gt\_\_(string)
+            \_\_hash\_\_()
+            \_\_init\_\_(seq)
+            \_\_int\_\_()
+            \_\_le\_\_(string)
+            \_\_len\_\_()
+            \_\_lt\_\_(string)
+            \_\_mod\_\_(args)
+            \_\_mul\_\_(n)
+            \_\_radd\_\_(other)
+            \_\_repr\_\_()
+            \_\_rmod\_\_(template)
+            \_\_str\_\_()
+            capitalize()
+            casefold()
+            center(width)
+            count(sub, start, end)
+            encode(encoding, errors)
+            endswith(suffix, start, end)
+            expandtabs(tabsize)
+            find(sub, start, end)
+            format()
+            format_map(mapping)
+            index(sub, start, end)
+            isalnum()
+            isalpha()
+            isascii()
+            isdecimal()
+            isdigit()
+            isidentifier()
+            islower()
+            isnumeric()
+            isprintable()
+            isspace()
+            istitle()
+            isupper()
+            join(seq)
+            ljust(width)
+            lower()
+            lstrip(chars)
+            partition(sep)
+            removeprefix()
+            removesuffix()
+            replace(old, new, maxsplit)
+            rfind(sub, start, end)
+            rindex(sub, start, end)
+            rjust(width)
+            rpartition(sep)
+            rsplit(sep, maxsplit)
+            rstrip(chars)
+            split(sep, maxsplit)
+            splitlines(keepends)
+            startswith(prefix, start, end)
+            strip(chars)
+            swapcase()
+            title()
+            translate()
+            upper()
+            zfill(width)
+          }
+          class _Link {
+            \_\_slots\_\_ : tuple
+            key
+            next
+            prev
+          }
+          class _OrderedDictItemsView {
+            \_\_class_getitem\_\_(item)
+            \_\_reversed\_\_()
+          }
+          class _OrderedDictKeysView {
+            \_\_class_getitem\_\_(item)
+            \_\_reversed\_\_()
+          }
+          class _OrderedDictValuesView {
+            \_\_class_getitem\_\_(item)
+            \_\_reversed\_\_()
+          }
+          class __type_params__ {
+          }
+          class defaultdict {
+            default_factory : NoneType
+            \_\_getitem\_\_(key)
+            \_\_missing\_\_(key)*
+          }
+          class denominator {
+          }
+          class deque {
+            iterable : list
+            maxlen : int
+            \_\_add\_\_(other)*
+            \_\_bool\_\_()
+            \_\_class_getitem\_\_(item)
+            \_\_contains\_\_(o)
+            \_\_copy\_\_()
+            \_\_delitem\_\_(index)*
+            \_\_getitem\_\_(index)
+            \_\_iadd\_\_(other)*
+            \_\_imul\_\_(other)*
+            \_\_init\_\_(iterable, maxlen)
+            \_\_iter\_\_()
+            \_\_len\_\_()
+            \_\_mul\_\_(other)*
+            \_\_nonzero\_\_()
+            \_\_reversed\_\_()
+            \_\_rmul\_\_(other)*
+            \_\_setitem\_\_(index, value)*
+            append(x)*
+            appendleft(x)*
+            clear()*
+            copy()
+            count(x)
+            extend(iterable)*
+            extendleft(iterable)*
+            index(x, start, end)
+            insert(i, x)*
+            pop()
+            popleft()
+            remove(value)*
+            reverse()
+            rotate(n)
+          }
+          class imag {
+          }
+          class numerator {
+          }
+          class object {
+            \_\_delattr\_\_()*
+            \_\_dir\_\_()*
+            \_\_eq\_\_()*
+            \_\_format\_\_()*
+            \_\_ge\_\_()*
+            \_\_getattribute\_\_()*
+            \_\_getstate\_\_()*
+            \_\_gt\_\_()*
+            \_\_hash\_\_()*
+            \_\_init\_\_()*
+            \_\_le\_\_()*
+            \_\_lt\_\_()*
+            \_\_ne\_\_()*
+            \_\_new\_\_()*
+            \_\_reduce\_\_()*
+            \_\_reduce_ex\_\_()*
+            \_\_repr\_\_()*
+            \_\_setattr\_\_()*
+            \_\_sizeof\_\_()*
+            \_\_str\_\_()*
+            \_\_subclasshook\_\_()*
+          }
+          class real {
+          }
+          class type {
+            \_\_call\_\_()*
+            \_\_delattr\_\_()*
+            \_\_dir\_\_()*
+            \_\_eq\_\_()*
+            \_\_format\_\_()*
+            \_\_ge\_\_()*
+            \_\_getattribute\_\_()*
+            \_\_getstate\_\_()*
+            \_\_gt\_\_()*
+            \_\_hash\_\_()*
+            \_\_init\_\_()*
+            \_\_instancecheck\_\_()*
+            \_\_le\_\_()*
+            \_\_lt\_\_()*
+            \_\_ne\_\_()*
+            \_\_new\_\_()*
+            \_\_or\_\_()*
+            \_\_reduce\_\_()*
+            \_\_reduce_ex\_\_()*
+            \_\_repr\_\_()*
+            \_\_ror\_\_()*
+            \_\_setattr\_\_()*
+            \_\_sizeof\_\_()*
+            \_\_str\_\_()*
+            \_\_subclasscheck\_\_()*
+            \_\_subclasses\_\_()*
+            \_\_subclasshook\_\_()*
+            mro()*
+          }
+          denominator --|> object
+          imag --|> object
+          numerator --|> object
+          real --|> object
+          type --|> object
+          __type_params__ --|> object
+          _Link --|> object
+          deque --|> object
+  
+       </div>
+  </body>
+</html>

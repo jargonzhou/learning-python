@@ -1,0 +1,6 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>10</x><y>220</y><w>80</w><h>30</h></coordinates><panel_attributes>Class</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>170</y><w>80</w><h>30</h></coordinates><panel_attributes>Constant
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>120</y><w>80</w><h>30</h></coordinates><panel_attributes>AbstractClass
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>70</y><w>80</w><h>30</h></coordinates><panel_attributes>/Interface/
+bg=green</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>10</x><y>10</y><w>80</w><h>30</h></coordinates><panel_attributes>Legend
+bg=pink</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>270</y><w>80</w><h>30</h></coordinates><panel_attributes>Annotation
+bg=red</panel_attributes><additional_attributes></additional_attributes></element></diagram>

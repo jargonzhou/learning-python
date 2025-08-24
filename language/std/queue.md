@@ -1,0 +1,1 @@
+# A synchronized queue class
