@@ -1,4 +1,4 @@
-# mypy
+# Mypy
 * https://mypy-lang.org/
 * [vscode-mypy](https://github.com/microsoft/vscode-mypy)
 

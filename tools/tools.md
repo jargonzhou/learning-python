@@ -39,9 +39,12 @@
 * [blue](https://pypi.org/project/blue/): Blue -- Some folks like black but I prefer blue.
 * [flake8](http://flake8.pycqa.org/en/latest/index.html): flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins to check the style and quality of some python code.
 * [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
-* [mypy](./mypy.md): Static Typing for Python.
+* [Mypy](./mypy.md): Static Typing for Python.
 * [pycodestyle.md](./pycodestyle.md)
 * [Pylint](./pylint/pylint.md): a static code analyser for Python 2 or 3.
+* [Pyre](https://github.com/facebook/pyre-check): Performant type-checking for python. - Facebook
+* [Pyright](https://github.com/microsoft/pyright): Static Type Checker for Python. - Microsoft
+* [Pytype](https://github.com/google/pytype): A static type analyzer for Python code. - Google
 * [typeshed](https://github.com/python/typeshed): Collection of library stubs for Python, with static types. - `pyi` stub files
 
 ## Testing

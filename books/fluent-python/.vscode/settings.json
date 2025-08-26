@@ -4,7 +4,7 @@
     "src"
   ],
   // environment varibales
-  "python.envFile": "${workspaceFolder}/.env",
+  "python.envFile": "${workspaceFolder}/.venv",
   "python.testing.cwd": "${workspaceFolder}",
   "python.testing.unittestArgs": [
     "-v",
