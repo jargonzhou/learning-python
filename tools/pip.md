@@ -4,6 +4,49 @@
 > pip is the package installer for Python. You can use it to install packages from the Python Package Index and other indexes.
 
 ## Usage
+
+```shell
+# install package
+# sample package: https://pypi.org/project/cowsay/
+$ pip install cowsay
+$ cowsay -t "Hello World"
+  ___________
+| Hello World |
+  ===========
+           \
+            \
+              ^__^
+              (oo)\_______
+              (__)\       )\/\
+                  ||----w |
+                  ||     ||
+
+# show package info
+$ pip show cowsay
+Name: cowsay
+Version: 6.1
+Summary: The famous cowsay for GNU/Linux is now available for python
+Home-page: https://github.com/VaasuDevanS/cowsay-python
+Author: Vaasudevan Srinivasan
+Author-email: vaasuceg.96@gmail.com
+License: GNU-GPL
+Location: D:\software\miniconda3\Lib\site-packages
+Requires:
+Required-by:
+
+# upgrade
+$ pip install --upgrade cowsay
+
+# uninstall
+$ pip uninstall -y cowsay
+```
+
+install a specific version:
+```shell
+pip install tree_sitter==0.22.3
+pip install --force-reinstall tree_sitter==0.22.3
+```
+
 ```shell
 # Requirements Files
 pip freeze > requirements.txt
@@ -16,12 +59,6 @@ pip show sphinx
 
 # search for packages
 pip search "query"
-```
-
-install a specific version:
-```shell
-pip install tree_sitter==0.22.3
-pip install --force-reinstall tree_sitter==0.22.3
 ```
 
 fix fatal error: Python.h: No such file or directory

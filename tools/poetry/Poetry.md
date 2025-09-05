@@ -49,6 +49,26 @@ $ poetry run which python
 ~/AppData/Local/pypoetry/Cache/virtualenvs/poetry-sample-E5coyubn-py3.12/Scripts/python
 $ poetry run python src/main.py 
 Hello poetry_sample
+
+# remove dependency
+$ poetry remove pendulum
+```
+
+```shell
+# install the defined dependencies for your project
+$ poetry install
+```
+
+package version constaints:
+```shell
+# Allow >=2.0.5, <3.0.0 versions
+poetry add pendulum@^2.0.5
+# Allow >=2.0.5, <2.1.0 versions
+poetry add pendulum@~2.0.5
+# Allow >=2.0.5 versions, without upper bound
+poetry add "pendulum>=2.0.5"
+# Allow only 2.0.5 version
+poetry add pendulum==2.0.5
 ```
 
 # Managing dependencies

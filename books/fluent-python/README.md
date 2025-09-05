@@ -7,12 +7,16 @@
 - Part V. Metaprogramming: 22 - 24
 
 # Depedencies
-* Poetry
-```shell
-$ poetry new fluent-python
-$ poetry env activate
-$ source .venv/Scripts/activate
-```
+
+| Dependency | Install                           | Description                                                            |
+| :--------- | :-------------------------------- | :--------------------------------------------------------------------- |
+| Poetry     | `poetry new fluent-python`        | `poetry env activate` `source .venv/Scripts/activate`                  |
+| unittest   | -                                 |                                                                        |
+| Mypy       | `poetry add mypy --group dev`     | `poetry run mypy tests/function_as_objects/test_function_type_hint.py` |
+| autopep8   | `poetry add autopep8 --group dev` |                                                                        |
+| pylint     | `poetry add pylint --group dev`   |                                                                        |
+| NumPy      | `poetry add numpy`                |                                                                        |
+
 * unittest: `test_str.py`
 ```shell
 # discover and run all
@@ -25,15 +29,4 @@ $ poetry run python tests/test_str.py
 $ poetry run python -m unittest tests.test_str.TestStringMethods
 # run specific test method
 $ poetry run python -m unittest tests.test_str.TestStringMethods.test_upper
-```
-* numpy
-```shell
-$ poetry add numpy
-```
-* autopep8
-* pylint
-* mypy
-```shell
-$ poetry add mypy --group dev
-$ poetry run mypy tests/function_as_objects/test_function_type_hint.py 
 ```

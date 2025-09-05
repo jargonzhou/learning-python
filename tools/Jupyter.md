@@ -7,6 +7,7 @@
 # Installation
 
 ```shell
+# https://pypi.org/project/jupyter
 $ pip install jupyter
 ```
 

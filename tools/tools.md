@@ -98,6 +98,7 @@
 * [ProtoBuf](./protobuf.ipynb)
 * [Requests: HTTP for Humans™](https://docs.python-requests.org/en/latest/): Requests is an elegant and simple HTTP library for Python, built for human beings.
 * [Starlette](https://www.starlette.io/): Starlette is a lightweight ASGI framework/toolkit, which is ideal for building async web services in Python.
+* [Tornado](https://github.com/tornadoweb/tornado): Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
 * [Twisted](https://github.com/twisted/twisted): Event-driven networking engine written in Python.
 * [Uvicorn](./Uvicorn.md)
 * [uWSGI](https://github.com/unbit/uwsgi/): The uWSGI project aims at developing a full stack for building hosting services. Application servers (for various programming languages and protocols), proxies, process managers and monitors are all implemented using a common api and a common configuration style.
@@ -106,6 +107,7 @@
 
 ## Misc
 * [attrs](https://www.attrs.org/): attrs is the Python package that will bring back the joy of writing classes by relieving you from the drudgery of implementing object protocols (aka dunder methods). Trusted by NASA for Mars missions since 2020! - “Dunder” is a contraction of “double underscore”.
+* [Pillow](https://pypi.org/project/pillow/): Python Imaging Library (Fork).
 * [pyedflib](https://github.com/holgern/pyedflib): a python library to read/write EDF+/BDF+ files based on EDFlib.
 * [Python Tutor](https://pythontutor.com/): Online Compiler, AI Tutor, and Visual Debugger for Python, Java, C, C++, and JavaScript.
 * [Regular Expression](./Regular%20Expression.ipynb)
