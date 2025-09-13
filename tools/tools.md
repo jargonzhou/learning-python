@@ -1,7 +1,7 @@
 
 # Python Tools
 
-## Skafold
+## Skaffold
 * [cookiecutter](./cookiecutter/cookiecutter.md)
 * [PyScaffold](./PyScaffold.md)
 
